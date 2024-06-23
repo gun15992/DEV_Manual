@@ -80,19 +80,19 @@ SHOW VARIABLES LIKE 'validate_password%';
 
 ### คำสั่งแสดงข้อมูล Version ของ MySQL 
 
-* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน Ubuntu Command`
+* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน Ubuntu`
 
 ```sh
 sudo mysqladmin -p -u username version
 ```
 
-* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน Command Prompt (CMD)`
+* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน Windows`
 
 ```bat
 mysql -V
 ```
 
-* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน MySQL Command`
+* กรณีที่ต้องการใช้ `คำสั่งใช้งานบน MySQL`
 
 ```sql
 STATUS;
