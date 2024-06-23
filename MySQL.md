@@ -115,7 +115,7 @@ exit;
 ### คำสั่งแสดง Database ทั้งหมด
 
 ```sql
-SHOW DATABASES
+SHOW DATABASES;
 ```
 
 ### คำสั่งสร้าง Database
