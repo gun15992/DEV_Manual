@@ -296,7 +296,7 @@ SELECT columnname1 FROM tablename WHERE columnname2=xxx GROUP BY columnname3 HAV
 ```
 
 ```sql
-SELECT columnname1 FROM tablename WHERE columnname2=xxx GROUP BY columnname3 HAVING groupbycondition ORDER BY columnname4 DESC LIMIT startrange, endrenge;
+SELECT columnname1 FROM tablename WHERE columnname2=xxx GROUP BY columnname3 HAVING groupbycondition ORDER BY columnname4 DESC LIMIT startrange, endrange;
 ```
 
 ### คำสั่งตั้งชื่อ Column ใน Table นั้น
@@ -354,3 +354,19 @@ SELECT columnname11 FROM tablename ORDER BY columnname21 DESC, columnname22 DESC
 ```sql
 SELECT columnname11 FROM tablename ORDER BY columnname21 DESC, columnname22;
 ```
+
+### คำสั่งแสดงการกำหนดจำนวน Record ในการแสดงผลลัพธ์ของ Column ใน Table นั้น
+
+* กรณีแสดง Record `แบบระบุจำนวน Record ที่ต้องการให้แสดง`
+
+```sql
+SELECT columnname1 FROM tablename LIMIT limitrange;
+```
+
+* กรณีแสดง Record `แบบระบุช่วงของ Record ที่ต้องการให้แสดง (โดยนับตำแหน่งที่ 0 เป็นตำแหน่งแรก)`
+
+```sql
+SELECT columnname1 FROM tablename LIMIT startrange, endrange;
+```
+
+> Update ข้อมูลล่าสุด : 24/06/2024 เวลา 11.36 น.
